@@ -1,105 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/gitstyle.css">
+    <title>Sivas Cheat Sheet</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <section>
-            <article>
-                <a href="../html/git.html">Rote Pille</a>
-            </article>
-        </section>
-        
-        <aside>
-            <article>
-                <a href="../html/terminal.html">Blaue Pille</a>
-            </article>
-        </aside>
+
+        <a href="./index.html"><h1>Sivas Cheatsheet</h1>
+
+
     </header>
+    
+        <div class="row">
+            
+            <div class="column">
+                <a href="./git.html">Rote Pille</a>
+            </div>
 
-    <main>
-        <section>
+            <div class="columnright">
+                <a href="./terminal.html"> Blau Pille</a>
+            </div>
+
+        </div>
+    </main>
         
-            <article>
-                <h2>Was ist GIT</h2>
+            <div class="column">
+                <div>
+                    <h2>Was ist GIT</h2>
 
-                <p>Git und Github sind nicht das gleiche! <br>Git ist ein VSC-Tool und GitHub ist eine Plattform die Git benutzt, es gibt auch andere zb. GitLab, GitBucket, BitBucket, Sourceforge und so weiter.</p>
+                    <p>Git und Github sind nicht das gleiche! <br>Git ist ein VSC-Tool und GitHub ist eine Plattform die Git benutzt, es gibt auch andere zb. GitLab, GitBucket, BitBucket, Sourceforge und so weiter.</p>
 
-                <p>Git wird überall benutzt und ist eins der wichtigsten Tools für Entwickler geworden. Dadurch können Entwickler von überall zusammenarbeiten.</p>
+                    <p>Git wird überall benutzt und ist eins der wichtigsten Tools für Entwickler geworden. Dadurch können Entwickler von überall zusammenarbeiten.</p>
 
-                <p>Git ist ein Versionverwaltungstool, das bei jedem comitten eine Art Schnappschuss von deinem Projekt macht. Hinterher hat man einen Stapel von Schnappschüssen.
-                </p>
-            </article>
+                    <p>Git ist ein Versionverwaltungstool, das bei jedem comitten eine Art Schnappschuss von deinem Projekt macht. Hinterher hat man einen Stapel von Schnappschüssen.
+                    </p>
+                </div>
 
-            <article>
-                <p>Lokal = Working Directory → Änderungen werden als Modified dargestellt </p>
-                <p>Staged Area = Index → Daten werden für den commit vorgemerkt sind aber noch nicht hochgeladen </p>
-                <p>.git directory repository → Daten sind von lokal auf git geklont worden und stehen als snapshot bereit</p>
-                <p>Branching/Merge → https://miro.com/app/board/uXjVO9rmPHw=/</p>
-            </article>
+                <div>
+                    <p>Lokal = Working Directory → Änderungen werden als Modified dargestellt </p>
+                    <p>Staged Area = Index → Daten werden für den commit vorgemerkt sind aber noch nicht hochgeladen </p>
+                    <p>.git directory repository → Daten sind von lokal auf git geklont worden und stehen als snapshot bereit</p>
+                    <p>Branching/Merge → https://miro.com/app/board/uXjVO9rmPHw=/</p>
+                </div>
 
-            <article>
-                <h3>Wiederholung</h3>
-                <ul>
-                    <li>git init</li>
+                <div>
+                    <h3>Wiederholung</h3>
                     <ul>
-                        <li>initialisiert ein lokales git repository</li>
+                        <li>git init</li>
+                        <ul>
+                            <li>initialisiert ein lokales git repository</li>
+                        </ul>
+                        <li>git add</li>
+                        <ul>
+                            <li>gibt an was alles in den commit rein soll ( . gibt an das alles in den commit sol)</li>
+                        </ul>
+                        <li>git commit -m 'message'</li>
+                        <ul>
+                            <li>hinterlegt einen message/commit ( man kann auch sagen erlegt eine version an)</li>
+                        </ul>
+                        <li>git push</li>
+                        <ul>
+                            <li>schickt das lokale repository in das github repository</li>
+                        </ul>
+                        <li>git log</li>
+                        <ul>
+                            <li>zeigt alle die bis dato erstellten commits ausführlich an</li>
+                        </ul>
+                        <li>git log --oneline</li>
+                        <ul>
+                            <li>zeigt alle die bis dato erstellten commits in kurzform an</li>
+                        </ul>
+                        <li>git branch 'name'</li>
+                        <ul>
+                            <li>Erstellt einen neuen Branch</li>
+                        </ul>
+                        <li>git branch -a</li>
+                        <ul>
+                            <li>Zeigt alle erstellten Branches an</li>
+                        </ul>
+                        <li>git branch -d 'name'</li>
+                        <ul>
+                            <li>Löscht den ausgewählten Branch</li>
+                        </ul>
+                        <li>git checkout</li>
+                        <ul>
+                            <li>Wechseln zwischen den Branches</li>
+                        </ul>
+                        <li>git pull</li>
+                        <ul>
+                            <li>Lädt die aktuelle Version des Repository von GitHub runter </li>
+                        </ul>
+                        <li>git clone</li>
+                        <ul>
+                            <li>Kopiert ein fremdes Projekt von Github</li>
+                        </ul>
+                        <li>git merge</li>
+                        <ul>
+                            <li>ist dafür da um zwei branches zusammenzuführen</li>
+                        </ul>
                     </ul>
-                    <li>git add</li>
-                    <ul>
-                        <li>gibt an was alles in den commit rein soll ( . gibt an das alles in den commit sol)</li>
-                    </ul>
-                    <li>git commit -m 'message'</li>
-                    <ul>
-                        <li>hinterlegt einen message/commit ( man kann auch sagen erlegt eine version an)</li>
-                    </ul>
-                    <li>git push</li>
-                    <ul>
-                        <li>schickt das lokale repository in das github repository</li>
-                    </ul>
-                    <li>git log</li>
-                    <ul>
-                        <li>zeigt alle die bis dato erstellten commits ausführlich an</li>
-                    </ul>
-                    <li>git log --oneline</li>
-                    <ul>
-                        <li>zeigt alle die bis dato erstellten commits in kurzform an</li>
-                    </ul>
-                    <li>git branch 'name'</li>
-                    <ul>
-                        <li>Erstellt einen neuen Branch</li>
-                    </ul>
-                    <li>git branch -a</li>
-                    <ul>
-                        <li>Zeigt alle erstellten Branches an</li>
-                    </ul>
-                    <li>git branch -d 'name'</li>
-                    <ul>
-                        <li>Löscht den ausgewählten Branch</li>
-                    </ul>
-                    <li>git checkout</li>
-                    <ul>
-                        <li>Wechseln zwischen den Branches</li>
-                    </ul>
-                    <li>git pull</li>
-                    <ul>
-                        <li>Lädt die aktuelle Version des Repository von GitHub runter </li>
-                    </ul>
-                    <li>git clone</li>
-                    <ul>
-                        <li>Kopiert ein fremdes Projekt von Github</li>
-                    </ul>
-                    <li>git merge</li>
-                    <ul>
-                        <li>ist dafür da um zwei branches zusammenzuführen</li>
-                    </ul>
-                </ul>
-            </article>
+                </div>
+            </div>
         
     </main>
 
